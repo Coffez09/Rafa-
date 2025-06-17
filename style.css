@@ -1,0 +1,380 @@
+body {
+
+    font-family: Arial, sans-serif;
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    height: 100vh;
+    
+    margin: 0;
+    
+    background-color: #161515;
+    
+    }
+    
+    
+    .profile-card {
+    
+    background-color: #333;
+    
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 8px rgb(156, 146, 5);
+    
+    text-align: center;
+    
+    padding: 20px;
+    
+    width: 300px;
+    
+    }
+    
+    
+    .profile-image {
+    
+    border-radius: 50%;
+    
+    width: 200px;
+    
+    height: 200px;
+    
+    object-fit: cover;
+    
+    margin-bottom: 15px;
+    
+    }
+    
+    
+    .profile-name {
+    
+    font-size: 24px;
+    
+    color: #D4AF37;
+    
+    margin: 0;
+    
+    }
+    
+    
+    .profile-bio {
+    
+    font-size: 14px;
+    
+    color: rgb(198, 201, 10);
+    
+    margin-top: 10px;
+    
+    }
+
+
+
+
+/* Estilo global */
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif; /* Fonte mais elegante */
+  color: #161515;
+  background-color: #161515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('fundo-luxo.jpg'); /* Texto ou imagem de fundo luxuosa */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Container para centralizar */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+/* Cabeçalho com imagem e gradiente */
+header {
+  background: linear-gradient(145deg, rgba(19, 18, 18, 0.9), rgba(1, 1, 1, 0.7));
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: #D4AF37;
+  margin: 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #D4AF37;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Botão link */
+a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #D4AF37;
+  color: #131212;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid #D4AF37;
+}
+
+a:hover {
+  background-color: #B88A2A;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção de Produtos */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.card {
+  background: #131212;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(160, 157, 4, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(160, 157, 4, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  font-family: 'Playfair Display', serif;
+  color: #D4AF37;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #bbb;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #131212;
+  color: #D4AF37;
+  font-size: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #D4AF37;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #B88A2A;
+}
+
+/* Estilo da seção "Sobre a marca" */
+.sobre {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(19, 18, 18, 0.8);
+  border-radius: 10px;
+  margin-bottom: 4rem;
+}
+
+.sobre h2 {
+  font-size: 2.5rem;
+  color: #D4AF37;
+  margin-bottom: 1.5rem;
+}
+
+.sobre p {
+  font-size: 1.2rem;
+  color: #bbb;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* Adicionar uma animação suave para o conteúdo da página */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #161515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+
+  .container {
+    max-width: 1200px; 
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center; 
+  }
+  
+
+  header {
+    background: #131212;
+    padding: 2rem;
+    text-align: center;
+    border-right: 1px solid black;
+  }
+  
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #D4AF37;
+    margin: 0;
+  }
+  
+  header p {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #333;
+  }
+  
+
+  .tabela-precos {
+    margin-top: 3rem;
+  }
+  
+  .tabela-precos h2 {
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+  }
+  
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #131212;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: center; 
+    border-bottom: 1px solid #D4AF37;
+  }
+  
+  th {
+    background-color: #1c1c1c;
+    font-size: 1.1rem;
+  }
+  
+  td {
+    background-color: #242323;
+    font-size: 1rem;
+  }
+  
+  tr {
+    height: 60px; 
+  }
+  
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #131212;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  footer img {
+    display: block;
+    margin: 0 auto;
+    bottom: 10%;
+  }
+  
+
+
+/* Transformar link em botão */
+a {
+    display: inline-block; /* Para permitir padding e outras propriedades */
+    padding: 10px 20px; /* Espaçamento interno para o "botão" */
+    background-color: #D4AF37; /* Cor dourada */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-weight: bold; /* Negrito */
+    text-align: center; /* Alinhar o texto no centro */
+    transition: all 0.3s ease; /* Suavizar transições para hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Efeito de hover - cor dourada mais escura */
+  a:hover {
+    background-color: #B88A2A; /* Cor mais escura de dourado */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    transform: translateY(-2px); /* Eleva o botão quando o mouse passa por cima */
+  }
+  
+  /* Efeito de foco - quando o botão é clicado ou selecionado */
+  a:focus {
+    outline: none; /* Remover o contorno padrão do navegador */
+    background-color: #B88A2A; /* Mesma cor de hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+  }
+  
